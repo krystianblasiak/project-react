@@ -1,8 +1,10 @@
 .cardForm {
     display: flex;
-    max-height: 75px;
-    font-size: 11px;
-    justify-content: center;
+    font-size: 13px;
     text-align: center;
     padding: 10px;
+
+    button {
+        font-size: 11px;
+    }
 }
