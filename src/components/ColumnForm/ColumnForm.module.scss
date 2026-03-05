@@ -1,0 +1,22 @@
+.columnForm {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.label {
+    margin: 0 5px;
+}
+
+@media (max-width: 560px) {
+    .columnForm {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .label {
+        margin: 10px;
+        margin-bottom: 15px;
+    }
+}
