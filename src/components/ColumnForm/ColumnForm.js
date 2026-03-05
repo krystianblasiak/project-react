@@ -18,9 +18,9 @@ const ColumnForm = props => {
     return (
         <form className={styles.columnForm} onSubmit={handleSubmit}>
             <label className={styles.label}> Tytuł: </label>
-            <TextInput type="text" value={title} onChange={e => setTitle(e.target.value)} />
+            <TextInput value={title} onChange={e => setTitle(e.target.value)} />
             <label className={styles.label}> Ikona: </label>
-            <TextInput type="text" value={icon} onChange={e => setIcon(e.target.value)} />
+            <TextInput value={icon} onChange={e => setIcon(e.target.value)} />
             <Button>Dodaj kolumnę</Button>
         </form>
     );
