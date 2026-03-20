@@ -11,7 +11,6 @@ const SearchForm = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-        console.log(value);
         dispatch({ type: "UPDATE_SEARCHCARD", playload: value})
     };
 
