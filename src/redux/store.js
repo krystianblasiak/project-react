@@ -9,6 +9,8 @@ const reducer = (state, action) => {
             return { ...state, columns: [ ...state.columns, { id: shortid(), ...action.playload }]};
         case "ADD_CARD":
             return { ...state, cards: [ ...state.cards, { id: shortid(), ...action.playload }]};
+        case "UPDATE_SEARCHCARD":
+            return { ...state, searchCard: action.playload };
         default:
             return state;
     }

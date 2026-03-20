@@ -24,8 +24,9 @@ const initialState = {
         { id: 4, columnId: 2, title: "Elizjum" },
         { id: 5, columnId: 3, title: "Starfield" },
         { id: 6, columnId: 3, title: "Company of Heroes 3" }
-    ]
+    ],
 
+    searchCard: ""
 };
 
 export default initialState;

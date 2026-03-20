@@ -5,7 +5,8 @@ import CardForm from "../CardForm/CardForm";
 import styles from "./Column.module.scss";
 
 const Column = props => {
-    const cards = useSelector(state => state.cards.filter(card => card.columnId === props.id));
+    const searchCard = useSelector(state => state.searchCard);
+    const cards = useSelector(state => state.cards.filter(card => card.columnId === props.id && card.title.toLowerCase().includes(searchCard.toLowerCase())));
 
     return (
         <article className={styles.column}>
