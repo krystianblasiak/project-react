@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { updateSearchCard } from "../../redux/store";
 
 import TextInput from "../TextInput/TextInput";
 import Button from "../Button/Button";
@@ -11,7 +12,7 @@ const SearchForm = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-        dispatch({ type: "UPDATE_SEARCHCARD", payload: value})
+        dispatch(updateSearchCard(value))
     };
 
     return (

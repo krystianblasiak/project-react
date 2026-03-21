@@ -6,6 +6,12 @@ import strContains from "../utils/strContains";
 
 //selectors
 export const getFilteredCards = ({ cards, searchCard }, columnId) => cards.filter(card => card.columnId === columnId && strContains(card.title, searchCard));
+export const getAllColumns = ({ columns }) => columns;
+
+// action creators
+export const addColumn = payload => ({ type: "ADD_COLUMN", payload });
+export const addCard = payload => ({ type: "ADD_CARD", payload });
+export const updateSearchCard = payload => ({ type: "UPDATE_SEARCHCARD", payload});
 
 const reducer = (state, action) => {
     switch(action.type){
