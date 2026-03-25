@@ -1,9 +1,10 @@
+import PageTitle from "../PageTitle/PageTitle";
 import styles from "./Hero.module.scss";
 
 const Hero = () => {
     return (
         <div className={styles.hero}>
-            <h1 className={styles.title}>Moja pierwsza aplikacja React</h1>
+            <PageTitle>Moja pierwsza aplikacja React</PageTitle>
             <p className={styles.subtitle}>Prosta aplikacja do zadań z listami, kolumnami i kartami</p>
         </div>
     );
