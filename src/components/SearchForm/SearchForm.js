@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useDispatch } from "react-redux";
 import { updateSearchCard } from "../../redux/store";
 
@@ -9,6 +9,8 @@ import styles from "./SearchForm.module.scss";
 const SearchForm = () => {
     const [value, setValue] = useState("");
     const dispatch = useDispatch();
+
+    useMemo(()=> dispatch(updateSearchCard(value)), []);
 
     const onSubmit = e => {
         e.preventDefault();
