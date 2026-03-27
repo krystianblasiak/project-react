@@ -11,3 +11,12 @@
     justify-content: space-between;
     font-weight: bold;
 }
+
+.btnStar {
+    background-color: #fff;
+    border: none;
+
+    &.active {
+        color: $color-warning;
+    }
+}

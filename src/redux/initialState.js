@@ -27,12 +27,12 @@ const initialState = {
     ],
 
     cards: [
-        { id: '1', columnId: '1', title: "Programuj tak, aby nie naprawiać Planowanie projektów i systemów" },
-        { id: '2', columnId: '1', title: "Star Wars. Kolekcja Legend. Eskadra Łotrów. Cykl X-wingi." },
-        { id: '3', columnId: '2', title: "Wilk z Wall Street" },
-        { id: '4', columnId: '2', title: "Elizjum" },
-        { id: '5', columnId: '3', title: "Starfield" },
-        { id: '6', columnId: '3', title: "Company of Heroes 3" }
+        { id: '1', columnId: '1', title: "Programuj tak, aby nie naprawiać Planowanie projektów i systemów", isFavorite: false },
+        { id: '2', columnId: '1', title: "Star Wars. Kolekcja Legend. Eskadra Łotrów. Cykl X-wingi.", isFavorite: false },
+        { id: '3', columnId: '2', title: "Wilk z Wall Street", isFavorite: false },
+        { id: '4', columnId: '2', title: "Elizjum", isFavorite: false },
+        { id: '5', columnId: '3', title: "Starfield", isFavorite: false },
+        { id: '6', columnId: '3', title: "Company of Heroes 3", isFavorite: false }
     ],
 
     lists: [

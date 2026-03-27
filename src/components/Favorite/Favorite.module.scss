@@ -1,0 +1,31 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+
+.div {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex-shrink: 0;
+    justify-content: s;
+    background: $color-light;
+    width: 33%;
+    margin: 0 $base-size $base-size 0;
+    padding: ($base-size * 1.5);
+    border-radius: $radius;
+    box-shadow: 0 math.div($base-size, 4) 0 rgba(0,0,0,0.3);
+    color: $color-dark;
+}
+
+.cards {
+    padding: math.div($base-size, 2) 0;
+}
+
+.subtitle {
+    padding: ($base-size * 3) 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: (- $base-size * 3);
+}
