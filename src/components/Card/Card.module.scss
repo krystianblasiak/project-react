@@ -12,11 +12,27 @@
     font-weight: bold;
 }
 
+.div {
+    display: flex;
+}
+
 .btnStar {
     background-color: #fff;
     border: none;
-
+    flex: 50%;
+    
     &.active {
         color: $color-warning;
     }
+}
+
+.btnTrash {
+    background-color: #fff;
+    border: none;
+    color: gray;
+}
+
+.btnTrash:hover {
+    color: black;
+    cursor: pointer;
 }
