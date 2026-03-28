@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { useDispatch } from "react-redux";
-import { updateSearchCard } from "../../redux/store";
+import { updateSearchCard } from "../../redux/subreducery/searchCardRedux";
 
 import TextInput from "../TextInput/TextInput";
 import Button from "../Button/Button";

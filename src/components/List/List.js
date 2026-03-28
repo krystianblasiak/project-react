@@ -2,7 +2,8 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { Navigate } from "react-router-dom";
 
-import { getAllColumnsByList, getListById } from "../../redux/store";
+import { getListById } from "../../redux/subreducery/listsRedux";
+import { getAllColumnsByList } from "../../redux/subreducery/columnsRedux";
 
 import Column from "../Column/Column";
 import ColumnForm from "../ColumnForm/ColumnForm";
